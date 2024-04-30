@@ -242,7 +242,7 @@ GameObject:
   m_Component:
   - component: {fileID: 74928737}
   - component: {fileID: 74928738}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GrassHillRight2 DownShadow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -655,7 +655,7 @@ GameObject:
   m_Component:
   - component: {fileID: 223019890}
   - component: {fileID: 223019891}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GrassCliffMid (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1742,7 +1742,7 @@ GameObject:
   m_Component:
   - component: {fileID: 658202457}
   - component: {fileID: 658202458}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GrassHillRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1826,7 +1826,7 @@ GameObject:
   m_Component:
   - component: {fileID: 676490054}
   - component: {fileID: 676490055}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GrassCliffMid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2162,7 +2162,7 @@ GameObject:
   m_Component:
   - component: {fileID: 865182514}
   - component: {fileID: 865182515}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GrassHillLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2355,7 +2355,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1111567452}
   - component: {fileID: 1111567453}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GrassCliffMid (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2439,7 +2439,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1130435700}
   - component: {fileID: 1130435701}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GrassCliffMid (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2526,8 +2526,9 @@ GameObject:
   - component: {fileID: 1147114965}
   - component: {fileID: 1147114968}
   - component: {fileID: 1147114969}
+  - component: {fileID: 1147114970}
   m_Layer: 0
-  m_Name: 1x_0
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2617,7 +2618,8 @@ Transform:
   m_LocalPosition: {x: -6.97, y: -2.59, z: 0}
   m_LocalScale: {x: 2.5751028, y: 2.5751028, z: 2.5751028}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1613261956}
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2630,7 +2632,7 @@ PolygonCollider2D:
   m_GameObject: {fileID: 1147114964}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 825aa8711e65b0d41bbe6fccb5e6e3dc, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -2646,19 +2648,35 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.35999998, y: 0.11}
-      - {x: 0.31, y: 0.29}
-      - {x: 0.25, y: 0.34}
-      - {x: 0.17, y: 0.37}
-      - {x: -0.14999999, y: 0.37}
-      - {x: -0.24, y: 0.34}
-      - {x: -0.32, y: 0.25}
-      - {x: -0.35999998, y: 0.13}
-      - {x: -0.35999998, y: -0.25}
-      - {x: -0.19, y: -0.37}
-      - {x: 0.24, y: -0.37}
-      - {x: 0.35, y: -0.29}
-      - {x: 0.35999998, y: -0.26999998}
+    - - {x: 0.34704733, y: -0.072568126}
+      - {x: 0.33591777, y: 0.07708037}
+      - {x: 0.32672527, y: 0.11}
+      - {x: 0.31925374, y: 0.16684468}
+      - {x: 0.30001757, y: 0.2467429}
+      - {x: 0.2383538, y: 0.31338033}
+      - {x: 0.11509686, y: 0.3683363}
+      - {x: -0.10175174, y: 0.37166378}
+      - {x: -0.23168133, y: 0.31670776}
+      - {x: -0.29171643, y: 0.24168132}
+      - {x: -0.3084242, y: 0.16826591}
+      - {x: -0.320219, y: 0.08234889}
+      - {x: -0.34482247, y: 0.05631221}
+      - {x: -0.3589274, y: -0.059278414}
+      - {x: -0.36002016, y: -0.10673891}
+      - {x: -0.31816658, y: -0.24441496}
+      - {x: -0.22048552, y: -0.23570411}
+      - {x: -0.18344776, y: -0.25160566}
+      - {x: -0.18015458, y: -0.36859354}
+      - {x: -0.049352236, y: -0.3690833}
+      - {x: -0.032465648, y: -0.27640584}
+      - {x: 0.034728117, y: -0.2764574}
+      - {x: 0.04805328, y: -0.36618996}
+      - {x: 0.18233351, y: -0.364374}
+      - {x: 0.19574784, y: -0.32453078}
+      - {x: 0.1939652, y: -0.25296825}
+      - {x: 0.2358228, y: -0.229195}
+      - {x: 0.2979594, y: -0.25765052}
+      - {x: 0.3606429, y: -0.22148684}
 --- !u!50 &1147114969
 Rigidbody2D:
   serializedVersion: 4
@@ -2679,7 +2697,24 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
+--- !u!114 &1147114970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1147114964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 125026aad6f2dfc4ba55422ed3aafd92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 1147114969}
+  groundCheck: {fileID: 1613261956}
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &1300091460
 GameObject:
   m_ObjectHideFlags: 0
@@ -2691,7 +2726,7 @@ GameObject:
   - component: {fileID: 1300091462}
   - component: {fileID: 1300091461}
   - component: {fileID: 1300091463}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GrassStart
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3193,6 +3228,37 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
+--- !u!1 &1613261955
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1613261956}
+  m_Layer: 0
+  m_Name: GroundCheck
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1613261956
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1613261955}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1147114967}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1637497821
 GameObject:
   m_ObjectHideFlags: 0
@@ -3820,7 +3886,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1886866464}
   - component: {fileID: 1886866465}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GrassCliffMid (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3904,7 +3970,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1916118292}
   - component: {fileID: 1916118293}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GrassCliffRight (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3988,7 +4054,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2021227410}
   - component: {fileID: 2021227411}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GrassHillLeft2 DownShadow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4072,7 +4138,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2111287046}
   - component: {fileID: 2111287047}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GrassCliffMid (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
